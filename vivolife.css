@@ -88,6 +88,7 @@ header p {
     background-color: white;
     padding-bottom: 10px;
 }
+
 .navbar .inner-list.active-dropdown li {
     display: block;
     margin-top: 20px;
@@ -177,10 +178,6 @@ header p {
         right: 10px;
     }
 
-    #nav-cent {
-        position: absolute;
-    }
-
     .navbar .outer-list {
         width: 100%;
         flex-direction: column;
@@ -204,6 +201,30 @@ header p {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .navbar .inner-list {
+        display: none;
+    }
+
+    .inner-list.active-dropdown {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-top: none;
+        margin-top: 5px;
+        z-index: 10;
+        background-color: white;
+    }
+    
+    .inner-list.active-dropdown .inner-list-item {
+        text-align: center;
+        border: solid 1px rgb(177, 176, 176);
+        border-radius: 10px;
+    }
+
+    .inner-list.active-dropdown .inner-list-item .small {
+        display: none;
     }
 }
 
